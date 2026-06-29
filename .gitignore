@@ -245,7 +245,3 @@ build/
 
 # Rust artifacts
 /rust-kernel/target/
-
-# Local agent memory
-.memory/
-

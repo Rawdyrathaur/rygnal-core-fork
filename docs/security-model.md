@@ -66,9 +66,8 @@ Current tool safety includes:
 
 ## Current Security Limitations
 
-- No real production identity provider (IdP) integration
-- No frontend dashboard/visual approval UI (a local HTTP API is supported for queue management and role checks)
-- No direct out-of-the-box integration with production agent orchestration frameworks (integrated via example adapter wrappers for OpenAI, LangChain, and MCP)
+- No real production identity system
+- No full approval UI/API yet
+- No real agent integration yet
 - No advanced adversarial detection yet
 - No enterprise policy backend yet
-

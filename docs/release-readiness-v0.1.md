@@ -102,23 +102,43 @@ docker compose run --rm rygnal python -m demo.run_demo
 ## Not Included in v0.1
 
 - SaaS dashboard
+
 - Web UI
-- Cloud-hosted auth/identity provider integration
+
+- Login/auth system
+
 - Billing
-- Multi-tenant cloud workspaces
-- Cloud deployment / Kubernetes
-- Direct out-of-the-box integration with production agent orchestration frameworks (integrated via example adapter wrappers for OpenAI, LangChain, and MCP)
+
+- Multi-tenant workspaces
+
+- Cloud deployment
+
+- Kubernetes
+
+- Real customer deployment
+
+- Real LLM agent integration
+
+- MCP gateway
+
 - Enterprise SSO
+
 - SIEM integration
 
 ## Known Limitations
 
 - Scenario runner uses controlled local workflows.
-- No direct out-of-the-box integration with production agent orchestration frameworks (integrated via example adapter wrappers for OpenAI, LangChain, and MCP).
-- Approval workflow is a local HTTP API / CLI workflow (no frontend visual dashboard UI yet).
-- Policy engine is simple YAML-based logic (but supports priority sorting and schema validation).
-- Risk engine is deterministic and rules-based.
-- External API adapter is dry-run only.
-- Tool adapters are local/sandbox-oriented.
-- Not enterprise production-ready yet.
 
+- No real AI agent is connected yet.
+
+- Approval workflow is not a full UI/API workflow yet.
+
+- Policy engine is simple YAML-based logic.
+
+- Risk engine is deterministic and rules-based.
+
+- External API adapter is dry-run only.
+
+- Tool adapters are local/sandbox-oriented.
+
+- Not enterprise production-ready yet.
