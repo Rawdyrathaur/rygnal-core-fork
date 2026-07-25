@@ -661,8 +661,9 @@ def _run_output_bound_probe(
         try:
             result = backend.run(
                 (
-                    "/usr/bin/awk",
-                    ('BEGIN { for (i = 0; i < 100000; i++) printf "x" }'),
+                    sys.executable,
+                    "-c",
+                    "import sys; sys.stdout.write('x' * 100000)",
                 ),
                 workspace,
                 15,
