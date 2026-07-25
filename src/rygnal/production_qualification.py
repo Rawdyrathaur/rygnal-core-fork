@@ -539,7 +539,8 @@ def validate_qualification_report(
             raise ProductionQualificationError("Qualification wheel does not match.")
 
     if require_qualified and not payload["qualified"]:
-        raise ProductionQualificationError("Production qualification did not pass.")
+        failed_checks = [c for c in payload.get("checks", []) if c.get("required", True) and not c.get("passed")]
+        raise ProductionQualificationError(f"Production qualification did not pass. Failed checks: {failed_checks}")
 
     return payload
 
